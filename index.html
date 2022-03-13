@@ -1,111 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Von Vista</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
-    
-    <meta name="description" content="Binary Search Tree Visualizer / Web Application">
-    <meta name="keywords" content="Binary, Search, Tree, Visualizer, Algorithms, Data Structures, 
-    Simulator, BST, Binary Tree, Binary Search, DSA, Tree">
-    <meta name="author" content="Von Vista">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE <!DOCTYPE html>
 
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="section1Parent">
-      <div class="section1Padding"></div>
-
-      <div class="section1Left">
-
-        <img id="logo" src="assets/triple v logo white thick.png">
-
-        <h1>VON VINCENT VISTA</h1>
-
-        <p id="baybayinName">bon+ bin+sen+t+ bis+t</p>
-
-        <div class="socials">
-          <a href="https://www.linkedin.com/in/von-vista-943866141/">
-            <img src="assets/LinkedIn 1.svg">
-          </a>
-
-          <a href="https://www.linkedin.com/in/von-vista-943866141/">
-            <img src="assets/Github 1.svg">
-          </a>
-
-          <a href="https://www.linkedin.com/in/von-vista-943866141/">
-            <img src="assets/Twitter 1.svg">
-          </a>
+    <div class="header"> 
+      <div class="header_sec1">
+        <img src="assets/Triple V Logo Sharp.png" style="height:100%;">
+        <div class="titleContainer" style="display:block;">
+          <h2 class="title title_sec1" id="title" style="margin:3px;">Title</h2>
+          <!-- <h2 class="title title_sec2" style="margin:0px;">Second Title</h2> -->
         </div>
       </div>
 
-      <div class="section1Right">
-        <img id="profilepic" src="assets/Header profile pic.png">   
+      <div class="header_sec2">
+        <button id="hamburg" style="height:100%;" onclick="hamburg()">
+          <svg fill="#ffffff" viewBox="0 0 50 50" height="100%" height="100px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg>
+        </button>
+        <!-- <p>Contact</p>
+        <p>Folio</p>
+        <p>About</p> -->
+        <img>
       </div>
-
-      <div class="section1Padding"></div>
-
     </div>
 
-    <div class="sectionBody">
 
-      <!-- HEADER -->
-      <h1>HELLO</h1>
-      <div>
-        <svg style="width:100%; height:10px;display:flex;align-items:center;">
-          <rect x="0" y="0" width="100%" height="5"
-          style="fill:rgb(255, 255, 255);" />
-        </svg>
+    <!-- <div class="intro">
+      <div class="introTextContainer">
+        <h3 class="introText">Create, Develop, Explore</h3>
       </div>
-      <!-- HEADER -->
+    </div> -->
 
-      <p>
-        Kumusta, I am Von Vincent Vista. A programmer, indie game and software developer, and currently taking 
-        a Bacherlor's Degree of Computer Science for my goal of being a software engineer. 
-        <br><br>
-        I have started coding when I was 11 years old when I first got exposed into the world of computer 
-        programming, and since then, it has been my hobby and passion.
-        <br><br>
-        I am also a graphic designer, digital and layout artist, video editor, and motion graphics editor, 
-        if you're interested in seeing my works in that field, you can go visit here
-        <br>
-        <a href="https://vonvista.wordpress.com/">Visit art website</a>
-        <br><br>
-        Here's a collection of my featured works and projects related to programming. 
+    <div class="hamburgMenu"> 
+      <button onclick="scrollToSection('.sec1')">Home</button>
+      <button onclick="scrollToSection('.sec2')">About</button>
+      <button onclick="scrollToSection('.sec3')">Projects</button>
+      <button onclick="scrollToSection('.footer')">Contact</button>
+    </div>
 
-      </p>
 
-      <br><br><br>
-
-      <!-- HEADER -->
-      <h1>PROJECTS</h1>
-      <div>
-        <svg style="width:100%; height:10px;display:flex;align-items:center;">
-          <rect x="0" y="0" width="100%" height="5"
-          style="fill:rgb(255, 255, 255);" />
-        </svg>
+    <div class="sec sec1">
+      <div class="flexcolumn sec1-left">
+        <h1 id="sec1Name" class="sec1_elem">Von Vincent Vista</h1>
+        <h3 id="baybayinName" class="sec1_elem">bon+ bin+sen+t+ bis+t</h3>
       </div>
-      <!-- HEADER -->
-
       
-      <div class="projectParent">
+      <img src="assets/von2.png" id="vonImg" alt="" class="sec1_elem">
+      <!-- <h3 class="sec1_elem" style="position:absolute;top:10%;">Hi</h3> -->
+    </div>
+    <div class="sec sec2">
+    
+      <img src="assets/034.png" alt="" class="sec2_elem" style="height:400px;padding-right: 50px;">
+
+      <div class="flexcolumn">
+        <p class="sec2_elem" style="width:max(40vh, 40vw);">
+          Kumusta, I am Von Vincent Vista. A programmer, indie game and software developer, and currently taking a Bacherlor's Degree of Computer Science for my goal of being a software engineer.
+          <br><br>
+          I have started coding when I was 11 years old when I first got exposed into the world of computer programming, and since then, it has been my hobby and passion.
+          <br><br>
+          I am also a graphic designer, digital and layout artist, video editor, and motion graphics editor, if you're interested in seeing my works in that field, you can go visit <a href="https://vonvista.wordpress.com/">here</a>
+          <br><br>
+          Here's a collection of my featured works and projects related to programming.</p>
+      </div>
+
+    </div>
+    
+    <div class="sec sec3">
+      
+      <div class="sec3-projects">
 
         <!-- PROJECT HERE -->
         <!-- PROJECT HERE -->
-        <div class="projectContainer">
+        <div 
+          class="projectContainer" 
+          onmouseover="projectHover(this, 'assets/projects/SortV Gif.gif')"
+          onmouseleave="projectHover(this, 'assets/projects/SortV Thumb.jpg')"
+        >
           
-          <img src="assets/projects/SortV Thumb.jpg"
-          onmouseover="hover(this, 'assets/projects/SortV Gif.gif');" 
-          onmouseout="unhover(this, 'assets/projects/SortV Thumb.jpg');">
+          <img class="projectImage" src="assets/projects/SortV Thumb.jpg">
   
           <h2>Sorting Visualizer</h2>
           <a href="https://vonvista.github.io/Sorting-Algorithms/">Visit Project</a>
-    
-          <svg class="projectBr">
-            <rect x="0" y="0" width="100%" height="10"
-            style="fill:rgb(255, 255, 255);" />
-          </svg>
-  
+          
           <p>
             An audio-visual simulation of 11 sorting algorithms with adjustments for number of elements and size
           </p>
@@ -122,19 +108,17 @@
         
         <!-- PROJECT HERE -->
         <!-- PROJECT HERE -->
-        <div class="projectContainer">
+        <div 
+          class="projectContainer" 
+          onmouseover="projectHover(this, 'assets/projects/PFV Gif.gif')"
+          onmouseleave="projectHover(this, 'assets/projects/PFV Thumb.jpg')"
+        >
             
-          <img src="assets/projects/PFV Thumb.jpg"
-          onmouseover="hover(this, 'assets/projects/PFV Gif.gif');" 
-          onmouseout="unhover(this, 'assets/projects/PFV Thumb.jpg');">
+          <img class="projectImage" src="assets/projects/PFV Thumb.jpg">
   
           <h2>Pathfinding/Maze Generation Visualizer</h2>
           <a href="https://vonvista.github.io/Pathfinding/index.html">Visit Project</a>
-  
-          <svg class="projectBr">
-            <rect x="0" y="0" width="100%" height="10"
-            style="fill:rgb(255, 255, 255);" />
-          </svg>
+
   
           <p>
             A visualizer of four (4) pathfinding algorithms and three (3) maze generation algorithms done in a grid.
@@ -154,19 +138,16 @@
 
         <!-- PROJECT HERE -->
         <!-- PROJECT HERE -->
-        <div class="projectContainer">
+        <div 
+          class="projectContainer" 
+          onmouseover="projectHover(this, 'assets/projects/Graph Gif.gif')"
+          onmouseleave="projectHover(this, 'assets/projects/Graph Thumb.jpg')"
+        >
             
-          <img src="assets/projects/Graph Thumb.jpg"
-          onmouseover="hover(this, 'assets/projects/Graph Gif.gif');" 
-          onmouseout="unhover(this, 'assets/projects/Graph Thumb.jpg');">
+          <img class="projectImage" src="assets/projects/Graph Thumb.jpg">
   
           <h2>Graph Visualizer</h2>
           <a href="https://vonvista.github.io/Graphs-Visualizer/index.html">Visit Project</a>
-  
-          <svg class="projectBr">
-            <rect x="0" y="0" width="100%" height="10"
-            style="fill:rgb(255, 255, 255);" />
-          </svg>
   
           <p>
             A visualizer of the Graph ADT. Create nodes and edges interacting with the canvas. Create
@@ -186,19 +167,16 @@
 
         <!-- PROJECT HERE -->
         <!-- PROJECT HERE -->
-        <div class="projectContainer">
+        <div 
+          class="projectContainer" 
+          onmouseover="projectHover(this, 'assets/projects/FSA Gif.gif')"
+          onmouseleave="projectHover(this, 'assets/projects/FSA Thumb.jpg')"
+        >
             
-          <img src="assets/projects/FSA Thumb.jpg"
-          onmouseover="hover(this, 'assets/projects/FSA Gif.gif');" 
-          onmouseout="unhover(this, 'assets/projects/FSA Thumb.jpg');">
+          <img class="projectImage" src="assets/projects/FSA Thumb.jpg">
   
           <h2>Finite State Automata Simulator</h2>
           <a href="https://vonvista.github.io/Finite-State-Automata-Simulator/">Visit Project</a>
-  
-          <svg class="projectBr">
-            <rect x="0" y="0" width="100%" height="10"
-            style="fill:rgb(255, 255, 255);" />
-          </svg>
   
           <p>
             A web-app for experimenting and creating finite state automatas. Supports Regular FAs, Nondeterministic FAs
@@ -217,19 +195,17 @@
 
         <!-- PROJECT HERE -->
         <!-- PROJECT HERE -->
-        <div class="projectContainer">
+        <div 
+          class="projectContainer" 
+          onmouseover="projectHover(this, 'assets/projects/BSTV Gif.gif')"
+          onmouseleave="projectHover(this, 'assets/projects/BSTV Thumb.jpg')"
+        >
 
-          <img src="assets/projects/BSTV Thumb.jpg" 
-          onmouseover="hover(this, 'assets/projects/BSTV Gif.gif');" 
-          onmouseout="unhover(this, 'assets/projects/BSTV Thumb.jpg');">
+          <img class="projectImage" src="assets/projects/BSTV Thumb.jpg">
 
           <h2>Binary Search Tree Visualizer</h2>
           <a href="https://vonvista.github.io/Binary-Search-Tree-Visualizer/">Visit Project</a>
 
-          <svg class="projectBr">
-            <rect x="0" y="0" width="100%" height="10"
-            style="fill:rgb(255, 255, 255);" />
-          </svg>
 
           <p>A visualizer of a binary search tree with insert, search, and delete functions. Can also visualize 
             preorder, inorder, and postorder traversals. Adjustments for tree node distances</p>
@@ -246,19 +222,16 @@
 
         <!-- PROJECT HERE -->
         <!-- PROJECT HERE -->
-        <div class="projectContainer">
+        <div 
+          class="projectContainer" 
+          onmouseover="projectHover(this, 'assets/projects/LLV Gif.gif')"
+          onmouseleave="projectHover(this, 'assets/projects/LLV Thumb.jpg')"
+        >
           
-          <img src="assets/projects/LLV Thumb.jpg"
-          onmouseover="hover(this, 'assets/projects/LLV Gif.gif');" 
-          onmouseout="unhover(this, 'assets/projects/LLV Thumb.jpg');">
+          <img class="projectImage" src="assets/projects/LLV Thumb.jpg">
 
           <h2>Linked List Visualizer</h2>
           <a href="https://vonvista.github.io/Linked-List/">Visit Project</a>
-
-          <svg class="projectBr">
-            <rect x="0" y="0" width="100%" height="10"
-            style="fill:rgb(255, 255, 255);" />
-          </svg>
 
           <p>
             A visualization of Linked List ADT, complete with Doubly Linked, Singly Linked, LL with tail and 
@@ -280,17 +253,12 @@
         <!-- PROJECT HERE -->
         <div class="projectContainer">
           
-          <img src="assets/projects/FFET Thumb.jpg">
+          <img class="projectImage" src="assets/projects/FFET Thumb.jpg">
           <!-- onmouseover="hover(this, 'assets/projects/Mineswoop Thumb.jpg');" 
           onmouseout="unhover(this, 'assets/projects/LLV Thumb.jpg');"> -->
 
           <h2>Flip-flop Excitation Table Generator</h2>
           <a href="https://vonvista.github.io/FlipFlop-Excitation-Table/">Visit Project</a>
-
-          <svg class="projectBr">
-            <rect x="0" y="0" width="100%" height="10"
-            style="fill:rgb(255, 255, 255);" />
-          </svg>
 
           <p>
             A table generator tool for flip flops of sequential circuits. Has SR, JK, D, and T Flip-flops.
@@ -312,17 +280,12 @@
         <!-- PROJECT HERE -->
         <div class="projectContainer">
           
-          <img src="assets/projects/Mineswoop Thumb.jpg">
+          <img class="projectImage" src="assets/projects/Mineswoop Thumb.jpg">
           <!-- onmouseover="hover(this, 'assets/projects/Mineswoop Thumb.jpg');" 
           onmouseout="unhover(this, 'assets/projects/LLV Thumb.jpg');"> -->
 
           <h2>Neon Minesweeper</h2>
           <p class="otherStatus">Project currently not in Github</p>
-
-          <svg class="projectBr">
-            <rect x="0" y="0" width="100%" height="10"
-            style="fill:rgb(255, 255, 255);" />
-          </svg>
 
           <p>
             Minesweeper game with a neon-theme created using PyGame as a final project for CMSC 12. 
@@ -342,17 +305,13 @@
         <!-- PROJECT HERE -->
         <div class="projectContainer">
           
-          <img src="assets/projects/TripleVGames Thumb.jpg">
+          <img class="projectImage" src="assets/projects/TripleVGames Thumb.jpg">
           <!-- onmouseover="hover(this, 'assets/projects/Mineswoop Thumb.jpg');" 
           onmouseout="unhover(this, 'assets/projects/LLV Thumb.jpg');"> -->
 
           <h2>Game Development (Triple V Games)</h2>
           <a href="https://vonvista.github.io/Linked-List/">Visit Google Play page</a>
 
-          <svg class="projectBr">
-            <rect x="0" y="0" width="100%" height="10"
-            style="fill:rgb(255, 255, 255);" />
-          </svg>
 
           <p>
             Collection of mobile games I made independently and currently uploaded in Google Play 
@@ -368,14 +327,30 @@
 
         </div>
 
-        
-        
       </div>
-      
+
+      <br><br><br><br><br>
+
     </div>
 
-    
-    <script src="index.js"></script>
 
+    <div class="footer">
+      <h3 id="text3">Contact me</h3>
+      <p style="margin: 0px;">vonatsiv1030@gmail.com</p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/von-vista-943866141/">
+          <img src="assets/LinkedIn 1.svg">
+        </a>
+
+        <a href="https://www.linkedin.com/in/von-vista-943866141/">
+          <img src="assets/Github 1.svg">
+        </a>
+
+        <a href="https://www.linkedin.com/in/von-vista-943866141/">
+          <img src="assets/Twitter 1.svg">
+        </a>
+      </div>
+    </div>
 
   </body>
+</html>

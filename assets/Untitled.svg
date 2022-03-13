@@ -1,0 +1,12 @@
+<svg id="eM8kv9wSYia1" viewBox="0 0 640 480" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" style="background-color: transparent;">
+    <style>
+        <![CDATA[#eM8kv9wSYia2_to {animation: eM8kv9wSYia2_to__to 1000ms linear infinite normal forwards}@keyframes eM8kv9wSYia2_to__to { 0% {transform: translate(319.999999px,330.669168px);animation-timing-function: cubic-bezier(0.645,0.045,0.355,1)} 100% {transform: translate(319.999999px,240.007505px)}} #eM8kv9wSYia2_tr {animation: eM8kv9wSYia2_tr__tr 1000ms linear infinite normal forwards}@keyframes eM8kv9wSYia2_tr__tr { 0% {transform: rotate(0deg);animation-timing-function: cubic-bezier(0.645,0.045,0.355,1)} 100% {transform: rotate(-45deg)}} #eM8kv9wSYia3_ts {animation: eM8kv9wSYia3_ts__ts 1000ms linear infinite normal forwards}@keyframes eM8kv9wSYia3_ts__ts { 0% {transform: translate(320px,240.007504px) scale(1.093275,1.308025);animation-timing-function: cubic-bezier(0.645,0.045,0.355,1)} 100% {transform: translate(320px,240.007504px) scale(0,1.308025)}} #eM8kv9wSYia4_to {animation: eM8kv9wSYia4_to__to 1000ms linear infinite normal forwards}@keyframes eM8kv9wSYia4_to__to { 0% {transform: translate(319.999999px,149.330832px);animation-timing-function: cubic-bezier(0.645,0.045,0.355,1)} 100% {transform: translate(320px,240.007504px)}} #eM8kv9wSYia4_tr {animation: eM8kv9wSYia4_tr__tr 1000ms linear infinite normal forwards}@keyframes eM8kv9wSYia4_tr__tr { 0% {transform: rotate(0deg);animation-timing-function: cubic-bezier(0.645,0.045,0.355,1)} 100% {transform: rotate(45deg)}}]]>
+    </style>
+    <g id="eM8kv9wSYia2_to" transform="translate(319.999999,330.669168)">
+        <g id="eM8kv9wSYia2_tr" transform="rotate(0)"><rect width="292.698583" height="34.661674" rx="0" ry="0" transform="scale(1.093275,1.308025) translate(-146.349291,-17.330837)" stroke-width="0" /></g>
+    </g>
+    <g id="eM8kv9wSYia3_ts" transform="translate(320,240.007504) scale(1.093275,1.308025)"><rect width="292.698583" height="34.661674" rx="0" ry="0" transform="translate(-146.349291,-17.330837)" stroke-width="0" /></g>
+    <g id="eM8kv9wSYia4_to" transform="translate(319.999999,149.330832)">
+        <g id="eM8kv9wSYia4_tr" transform="rotate(0)"><rect width="292.698583" height="34.661674" rx="0" ry="0" transform="scale(1.093275,1.308025) translate(-146.349291,-17.330837)" stroke-width="0" /></g>
+    </g>
+</svg>
