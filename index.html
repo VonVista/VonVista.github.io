@@ -2,38 +2,39 @@
 
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="header"> 
+    <div class="header">
       <div class="header_sec1">
-        <img src="assets/Triple V Logo Sharp.png" style="height:100%;">
-        <div class="titleContainer" style="display:block;">
-          <h2 class="title title_sec1" id="title" style="margin:3px;">Title</h2>
+        <img src="assets/Triple V Logo Sharp.png" style="height: 100%" />
+        <div class="titleContainer" style="display: block">
+          <h2 class="title title_sec1" id="title" style="margin: 3px">Title</h2>
           <!-- <h2 class="title title_sec2" style="margin:0px;">Second Title</h2> -->
         </div>
       </div>
 
       <div class="header_sec2">
-        <button id="hamburg" style="height:100%;" onclick="hamburg()">
-          <svg fill="#ffffff" viewBox="0 0 50 50" height="100%" height="100px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg>
+        <button id="hamburg" style="height: 100%" onclick="hamburg()">
+          <svg fill="#ffffff" viewBox="0 0 50 50" height="100%" height="100px">
+            <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z" />
+          </svg>
         </button>
         <!-- <p>Contact</p>
         <p>Folio</p>
         <p>About</p> -->
-        <img>
+        <img />
       </div>
     </div>
-
 
     <!-- <div class="intro">
       <div class="introTextContainer">
@@ -41,219 +42,266 @@
       </div>
     </div> -->
 
-    <div class="hamburgMenu"> 
+    <div class="hamburgMenu">
       <button onclick="scrollToSection('.sec1')">Home</button>
       <button onclick="scrollToSection('.sec2')">About</button>
       <button onclick="scrollToSection('.sec3')">Projects</button>
       <button onclick="scrollToSection('.footer')">Contact</button>
     </div>
 
-
     <div class="sec sec1">
       <div class="flexcolumn sec1-left">
         <h1 id="sec1Name" class="sec1_elem">Von Vincent Vista</h1>
         <h3 id="baybayinName" class="sec1_elem">bon+ bin+sen+t+ bis+t</h3>
       </div>
-      
-      <img src="assets/von2.png" id="vonImg" alt="" class="sec1_elem">
+
+      <img src="assets/von2.png" id="vonImg" alt="" class="sec1_elem" />
       <!-- <h3 class="sec1_elem" style="position:absolute;top:10%;">Hi</h3> -->
     </div>
     <div class="sec sec2">
-    
-      <img src="assets/034.png" alt="" class="sec2_elem" style="height:400px;padding-right: 50px;">
+      <img src="assets/034.png" alt="" class="sec2_elem" style="height: 400px; padding-right: 50px" />
 
       <div class="flexcolumn">
-        <p class="sec2_elem" style="width:max(40vh, 40vw);">
-          Kumusta, I am Von Vincent Vista. A programmer, indie game and software developer, and currently taking a Bacherlor's Degree of Computer Science for my goal of being a software engineer.
-          <br><br>
-          I have started coding when I was 11 years old when I first got exposed into the world of computer programming, and since then, it has been my hobby and passion.
-          <br><br>
-          I am also a graphic designer, digital and layout artist, video editor, and motion graphics editor, if you're interested in seeing my works in that field, you can go visit <a href="https://vonvista.wordpress.com/">here</a>
-          <br><br>
-          Here's a collection of my featured works and projects related to programming.</p>
+        <p class="sec2_elem" style="width: max(40vh, 40vw)">
+          Kumusta! I am Von Vincent Vista, a full-stack developer that specializes in web, mobile, and game development.
+          <br /><br />
+          I have started coding at a young age and since then, it has been my hobby and passion.
+          <br /><br />
+          I am also a graphic designer, digital and layout artist, video editor, and motion graphics editor, if you're interested in seeing my works
+          in that field, you can go visit <a href="https://vonvista.wordpress.com/">here</a> <br /><br />
+          Here's a collection of my featured works and projects related to programming.
+        </p>
       </div>
-
     </div>
-    
+
     <div class="sec sec3">
-      
       <div class="sec3-projects">
+        <!-- PROJECT HERE -->
+        <!-- PROJECT HERE -->
+        <div class="projectContainer">
+          <img class="projectImage" src="assets/projects/Baybayin Project.jpg" />
 
-        <!-- PROJECT HERE -->
-        <!-- PROJECT HERE -->
-        <div 
-          class="projectContainer" 
-          onmouseover="projectHover(this, 'assets/projects/SortV Gif.gif')"
-          onmouseleave="projectHover(this, 'assets/projects/SortV Thumb.jpg')"
-        >
-          
-          <img class="projectImage" src="assets/projects/SortV Thumb.jpg">
-  
-          <h2>Sorting Visualizer</h2>
-          <a href="https://vonvista.github.io/Sorting-Algorithms/">Visit Project</a>
-          
+          <h2>The Baybayin Project</h2>
+          <a href="https://vonvista.github.io/baybayin-project/">Visit Project</a>
+
           <p>
-            An audio-visual simulation of 11 sorting algorithms with adjustments for number of elements and size
+            An animation and design focused site teaching and detailing about the Baybayin script of the Philippines. Created using GSAP and Vanilla
+            Javascript
           </p>
 
           <div class="tagsContainer">
-            <p style="background-color:#8b0e0e;">Data Structures and Algorithms</p>
-            <p style="background-color:#100e8b;">HTML</p>
-            <p style="background-color:#100e8b;">CSS</p>
-            <p style="background-color:#100e8b;">Javascript</p>
-            <p style="background-color:#278b0e;">p5.js</p>
+            <p style="background-color: #8b0e0e">Creative Web Design</p>
+            <p style="background-color: #100e8b">HTML</p>
+            <p style="background-color: #100e8b">CSS</p>
+            <p style="background-color: #100e8b">Javascript</p>
+            <p style="background-color: #278b0e">GSAP</p>
           </div>
-  
-        </div>
-        
-        <!-- PROJECT HERE -->
-        <!-- PROJECT HERE -->
-        <div 
-          class="projectContainer" 
-          onmouseover="projectHover(this, 'assets/projects/PFV Gif.gif')"
-          onmouseleave="projectHover(this, 'assets/projects/PFV Thumb.jpg')"
-        >
-            
-          <img class="projectImage" src="assets/projects/PFV Thumb.jpg">
-  
-          <h2>Pathfinding/Maze Generation Visualizer</h2>
-          <a href="https://vonvista.github.io/Pathfinding/index.html">Visit Project</a>
-
-  
-          <p>
-            A visualizer of four (4) pathfinding algorithms and three (3) maze generation algorithms done in a grid.
-            Adjustable grid size and cell size
-  
-          </p>
-
-          <div class="tagsContainer">
-            <p style="background-color:#8b0e0e;">Data Structures and Algorithms</p>
-            <p style="background-color:#100e8b;">HTML</p>
-            <p style="background-color:#100e8b;">CSS</p>
-            <p style="background-color:#100e8b;">Javascript</p>
-            <p style="background-color:#278b0e;">p5.js</p>
-          </div>
-  
-        </div>
-
-        <!-- PROJECT HERE -->
-        <!-- PROJECT HERE -->
-        <div 
-          class="projectContainer" 
-          onmouseover="projectHover(this, 'assets/projects/Graph Gif.gif')"
-          onmouseleave="projectHover(this, 'assets/projects/Graph Thumb.jpg')"
-        >
-            
-          <img class="projectImage" src="assets/projects/Graph Thumb.jpg">
-  
-          <h2>Graph Visualizer</h2>
-          <a href="https://vonvista.github.io/Graphs-Visualizer/index.html">Visit Project</a>
-  
-          <p>
-            A visualizer of the Graph ADT. Create nodes and edges interacting with the canvas. Create
-            weighted/unweighted directed/undirected graphs. Includes BFS, DFS, Graph Coloring, MST, SPT and SCC 
-            algorithms
-          </p>
-
-          <div class="tagsContainer">
-            <p style="background-color:#8b0e0e;">Data Sturctures and Algorithms</p>
-            <p style="background-color:#100e8b;">HTML</p>
-            <p style="background-color:#100e8b;">CSS</p>
-            <p style="background-color:#100e8b;">Javascript</p>
-            <p style="background-color:#278b0e;">p5.js</p>
-          </div>
-  
-        </div>
-
-        <!-- PROJECT HERE -->
-        <!-- PROJECT HERE -->
-        <div 
-          class="projectContainer" 
-          onmouseover="projectHover(this, 'assets/projects/FSA Gif.gif')"
-          onmouseleave="projectHover(this, 'assets/projects/FSA Thumb.jpg')"
-        >
-            
-          <img class="projectImage" src="assets/projects/FSA Thumb.jpg">
-  
-          <h2>Finite State Automata Simulator</h2>
-          <a href="https://vonvista.github.io/Finite-State-Automata-Simulator/">Visit Project</a>
-  
-          <p>
-            A web-app for experimenting and creating finite state automatas. Supports Regular FAs, Nondeterministic FAs
-            and e-NFAs. Inspired from JFLAP
-          </p>
-
-          <div class="tagsContainer">
-            <p style="background-color:#8b0e0e;">Automata and Language Theory</p>
-            <p style="background-color:#100e8b;">HTML</p>
-            <p style="background-color:#100e8b;">CSS</p>
-            <p style="background-color:#100e8b;">Javascript</p>
-            <p style="background-color:#278b0e;">p5.js</p>
-          </div>
-  
-        </div>
-
-        <!-- PROJECT HERE -->
-        <!-- PROJECT HERE -->
-        <div 
-          class="projectContainer" 
-          onmouseover="projectHover(this, 'assets/projects/BSTV Gif.gif')"
-          onmouseleave="projectHover(this, 'assets/projects/BSTV Thumb.jpg')"
-        >
-
-          <img class="projectImage" src="assets/projects/BSTV Thumb.jpg">
-
-          <h2>Binary Search Tree Visualizer</h2>
-          <a href="https://vonvista.github.io/Binary-Search-Tree-Visualizer/">Visit Project</a>
-
-
-          <p>A visualizer of a binary search tree with insert, search, and delete functions. Can also visualize 
-            preorder, inorder, and postorder traversals. Adjustments for tree node distances</p>
-
-          <div class="tagsContainer">
-            <p style="background-color:#8b0e0e;">Data Structures and Algorithms</p>
-            <p style="background-color:#100e8b;">HTML</p>
-            <p style="background-color:#100e8b;">CSS</p>
-            <p style="background-color:#100e8b;">Javascript</p>
-            <p style="background-color:#278b0e;">p5.js</p>
-          </div>
-
-        </div>
-
-        <!-- PROJECT HERE -->
-        <!-- PROJECT HERE -->
-        <div 
-          class="projectContainer" 
-          onmouseover="projectHover(this, 'assets/projects/LLV Gif.gif')"
-          onmouseleave="projectHover(this, 'assets/projects/LLV Thumb.jpg')"
-        >
-          
-          <img class="projectImage" src="assets/projects/LLV Thumb.jpg">
-
-          <h2>Linked List Visualizer</h2>
-          <a href="https://vonvista.github.io/Linked-List/">Visit Project</a>
-
-          <p>
-            A visualization of Linked List ADT, complete with Doubly Linked, Singly Linked, LL with tail and 
-            Stack and Queues implementation using LLs
-
-          </p>
-
-          <div class="tagsContainer">
-            <p style="background-color:#8b0e0e;">Data Structures and Algorithms</p>
-            <p style="background-color:#100e8b;">HTML</p>
-            <p style="background-color:#100e8b;">CSS</p>
-            <p style="background-color:#100e8b;">Javascript</p>
-            <p style="background-color:#278b0e;">p5.js</p>
-          </div>
-
         </div>
 
         <!-- PROJECT HERE -->
         <!-- PROJECT HERE -->
         <div class="projectContainer">
-          
-          <img class="projectImage" src="assets/projects/FFET Thumb.jpg">
+          <img class="projectImage" src="assets/projects/FSAM.jpg" />
+
+          <h2>Finite State Automata Mobile</h2>
+          <a href="https://play.google.com/store/apps/details?id=com.TripleVGames.MFLAP">Visit Project</a>
+
+          <p>
+            Winner of the Best SP/Thesis for the IT Category in the ICS Undergraduate Research Symposium 2023 in the University of the Philippines -
+            Los Baños. A mobile application for creating and simulating finite state machines. Supports Finite State Automata, Pushdown Automata,
+            Turing Machines. Inspired from JFLAP
+          </p>
+
+          <div class="tagsContainer">
+            <p style="background-color: #8b0e0e">Formal Languages and Automata Theory</p>
+            <p style="background-color: #100e8b">C#</p>
+            <p style="background-color: #100e8b">.NET</p>
+            <p style="background-color: #278b0e">Unity</p>
+          </div>
+        </div>
+
+        <!-- PROJECT HERE -->
+        <!-- PROJECT HERE -->
+        <div class="projectContainer">
+          <img class="projectImage" src="assets/projects/Kalatas.jpg" />
+
+          <h2>Kalatas</h2>
+          <a href="https://github.com/vonvista/C5L-GWA-Verifier/releases">Visit Project</a>
+
+          <p>
+            A desktop application for verifying and checking the GWA of students in the University of the Philippines (UP) System. Supports multiple
+            students and multiple semesters. Uses PDF gradesheets to import grades as well as manual inputs. Can export to CSV and PDF.
+          </p>
+
+          <div class="tagsContainer">
+            <p style="background-color: #8b0e0e">Software Development</p>
+            <p style="background-color: #100e8b">Javascript</p>
+            <p style="background-color: #100e8b">CSS</p>
+            <p style="background-color: #100e8b">HTML</p>
+            <p style="background-color: #278b0e">MongoDB</p>
+            <p style="background-color: #278b0e">Express</p>
+            <p style="background-color: #278b0e">Node</p>
+            <p style="background-color: #278b0e">ReactJS</p>
+            <p style="background-color: #278b0e">Tailwind</p>
+          </div>
+        </div>
+
+        <!-- PROJECT HERE -->
+        <!-- PROJECT HERE -->
+        <div
+          class="projectContainer"
+          onmouseover="projectHover(this, 'assets/projects/SortV Gif.gif')"
+          onmouseleave="projectHover(this, 'assets/projects/SortV Thumb.jpg')"
+        >
+          <img class="projectImage" src="assets/projects/SortV Thumb.jpg" />
+
+          <h2>Sorting Visualizer</h2>
+          <a href="https://vonvista.github.io/Sorting-Algorithms/">Visit Project</a>
+
+          <p>An audio-visual simulation of 11 sorting algorithms with adjustments for number of elements and size</p>
+
+          <div class="tagsContainer">
+            <p style="background-color: #8b0e0e">Data Structures and Algorithms</p>
+            <p style="background-color: #100e8b">HTML</p>
+            <p style="background-color: #100e8b">CSS</p>
+            <p style="background-color: #100e8b">Javascript</p>
+            <p style="background-color: #278b0e">p5.js</p>
+          </div>
+        </div>
+
+        <!-- PROJECT HERE -->
+        <!-- PROJECT HERE -->
+        <div
+          class="projectContainer"
+          onmouseover="projectHover(this, 'assets/projects/PFV Gif.gif')"
+          onmouseleave="projectHover(this, 'assets/projects/PFV Thumb.jpg')"
+        >
+          <img class="projectImage" src="assets/projects/PFV Thumb.jpg" />
+
+          <h2>Pathfinding/Maze Generation Visualizer</h2>
+          <a href="https://vonvista.github.io/Pathfinding/index.html">Visit Project</a>
+
+          <p>
+            A visualizer of four (4) pathfinding algorithms and three (3) maze generation algorithms done in a grid. Adjustable grid size and cell
+            size
+          </p>
+
+          <div class="tagsContainer">
+            <p style="background-color: #8b0e0e">Data Structures and Algorithms</p>
+            <p style="background-color: #100e8b">HTML</p>
+            <p style="background-color: #100e8b">CSS</p>
+            <p style="background-color: #100e8b">Javascript</p>
+            <p style="background-color: #278b0e">p5.js</p>
+          </div>
+        </div>
+
+        <!-- PROJECT HERE -->
+        <!-- PROJECT HERE -->
+        <div
+          class="projectContainer"
+          onmouseover="projectHover(this, 'assets/projects/Graph Gif.gif')"
+          onmouseleave="projectHover(this, 'assets/projects/Graph Thumb.jpg')"
+        >
+          <img class="projectImage" src="assets/projects/Graph Thumb.jpg" />
+
+          <h2>Graph Visualizer</h2>
+          <a href="https://vonvista.github.io/Graphs-Visualizer/index.html">Visit Project</a>
+
+          <p>
+            A visualizer of the Graph ADT. Create nodes and edges interacting with the canvas. Create weighted/unweighted directed/undirected graphs.
+            Includes BFS, DFS, Graph Coloring, MST, SPT and SCC algorithms
+          </p>
+
+          <div class="tagsContainer">
+            <p style="background-color: #8b0e0e">Data Sturctures and Algorithms</p>
+            <p style="background-color: #100e8b">HTML</p>
+            <p style="background-color: #100e8b">CSS</p>
+            <p style="background-color: #100e8b">Javascript</p>
+            <p style="background-color: #278b0e">p5.js</p>
+          </div>
+        </div>
+
+        <!-- PROJECT HERE -->
+        <!-- PROJECT HERE -->
+        <div
+          class="projectContainer"
+          onmouseover="projectHover(this, 'assets/projects/FSA Gif.gif')"
+          onmouseleave="projectHover(this, 'assets/projects/FSA Thumb.jpg')"
+        >
+          <img class="projectImage" src="assets/projects/FSA Thumb.jpg" />
+
+          <h2>Finite State Automata Simulator</h2>
+          <a href="https://vonvista.github.io/Finite-State-Automata-Simulator/">Visit Project</a>
+
+          <p>
+            A web-app for experimenting and creating finite state automatas. Supports Regular FAs, Nondeterministic FAs and e-NFAs. Inspired from
+            JFLAP
+          </p>
+
+          <div class="tagsContainer">
+            <p style="background-color: #8b0e0e">Automata and Language Theory</p>
+            <p style="background-color: #100e8b">HTML</p>
+            <p style="background-color: #100e8b">CSS</p>
+            <p style="background-color: #100e8b">Javascript</p>
+            <p style="background-color: #278b0e">p5.js</p>
+          </div>
+        </div>
+
+        <!-- PROJECT HERE -->
+        <!-- PROJECT HERE -->
+        <div
+          class="projectContainer"
+          onmouseover="projectHover(this, 'assets/projects/BSTV Gif.gif')"
+          onmouseleave="projectHover(this, 'assets/projects/BSTV Thumb.jpg')"
+        >
+          <img class="projectImage" src="assets/projects/BSTV Thumb.jpg" />
+
+          <h2>Binary Search Tree Visualizer</h2>
+          <a href="https://vonvista.github.io/Binary-Search-Tree-Visualizer/">Visit Project</a>
+
+          <p>
+            A visualizer of a binary search tree with insert, search, and delete functions. Can also visualize preorder, inorder, and postorder
+            traversals. Adjustments for tree node distances
+          </p>
+
+          <div class="tagsContainer">
+            <p style="background-color: #8b0e0e">Data Structures and Algorithms</p>
+            <p style="background-color: #100e8b">HTML</p>
+            <p style="background-color: #100e8b">CSS</p>
+            <p style="background-color: #100e8b">Javascript</p>
+            <p style="background-color: #278b0e">p5.js</p>
+          </div>
+        </div>
+
+        <!-- PROJECT HERE -->
+        <!-- PROJECT HERE -->
+        <div
+          class="projectContainer"
+          onmouseover="projectHover(this, 'assets/projects/LLV Gif.gif')"
+          onmouseleave="projectHover(this, 'assets/projects/LLV Thumb.jpg')"
+        >
+          <img class="projectImage" src="assets/projects/LLV Thumb.jpg" />
+
+          <h2>Linked List Visualizer</h2>
+          <a href="https://vonvista.github.io/Linked-List/">Visit Project</a>
+
+          <p>
+            A visualization of Linked List ADT, complete with Doubly Linked, Singly Linked, LL with tail and Stack and Queues implementation using LLs
+          </p>
+
+          <div class="tagsContainer">
+            <p style="background-color: #8b0e0e">Data Structures and Algorithms</p>
+            <p style="background-color: #100e8b">HTML</p>
+            <p style="background-color: #100e8b">CSS</p>
+            <p style="background-color: #100e8b">Javascript</p>
+            <p style="background-color: #278b0e">p5.js</p>
+          </div>
+        </div>
+
+        <!-- PROJECT HERE -->
+        <!-- PROJECT HERE -->
+        <div class="projectContainer">
+          <img class="projectImage" src="assets/projects/FFET Thumb.jpg" />
           <!-- onmouseover="hover(this, 'assets/projects/Mineswoop Thumb.jpg');" 
           onmouseout="unhover(this, 'assets/projects/LLV Thumb.jpg');"> -->
 
@@ -261,26 +309,23 @@
           <a href="https://vonvista.github.io/FlipFlop-Excitation-Table/">Visit Project</a>
 
           <p>
-            A table generator tool for flip flops of sequential circuits. Has SR, JK, D, and T Flip-flops.
-            Generates two tables, Type A that can modify present states, Type B that can modify input functions
-
+            A table generator tool for flip flops of sequential circuits. Has SR, JK, D, and T Flip-flops. Generates two tables, Type A that can
+            modify present states, Type B that can modify input functions
           </p>
 
           <div class="tagsContainer">
-            <p style="background-color:#8b0e0e;">Logic Design and Digital Computer Circuit</p>
-            <p style="background-color:#100e8b;">HTML</p>
-            <p style="background-color:#100e8b;">CSS</p>
-            <p style="background-color:#100e8b;">Javascript</p>
-            <p style="background-color:#278b0e;">React JS</p>
+            <p style="background-color: #8b0e0e">Logic Design and Digital Computer Circuit</p>
+            <p style="background-color: #100e8b">HTML</p>
+            <p style="background-color: #100e8b">CSS</p>
+            <p style="background-color: #100e8b">Javascript</p>
+            <p style="background-color: #278b0e">React JS</p>
           </div>
-
         </div>
 
         <!-- PROJECT HERE -->
         <!-- PROJECT HERE -->
         <div class="projectContainer">
-          
-          <img class="projectImage" src="assets/projects/Mineswoop Thumb.jpg">
+          <img class="projectImage" src="assets/projects/Mineswoop Thumb.jpg" />
           <!-- onmouseover="hover(this, 'assets/projects/Mineswoop Thumb.jpg');" 
           onmouseout="unhover(this, 'assets/projects/LLV Thumb.jpg');"> -->
 
@@ -288,69 +333,59 @@
           <p class="otherStatus">Project currently not in Github</p>
 
           <p>
-            Minesweeper game with a neon-theme created using PyGame as a final project for CMSC 12. 
-            Uses I/O for saving state of the game. Noticed by the PyGame team.
-
+            Minesweeper game with a neon-theme created using PyGame as a final project for CMSC 12. Uses I/O for saving state of the game. Noticed by
+            the PyGame team.
           </p>
 
           <div class="tagsContainer">
-            <p style="background-color:#8b0e0e;">Games</p>
-            <p style="background-color:#100e8b;">Python</p>
-            <p style="background-color:#278b0e;">Pygame</p>
+            <p style="background-color: #8b0e0e">Games</p>
+            <p style="background-color: #100e8b">Python</p>
+            <p style="background-color: #278b0e">Pygame</p>
           </div>
-
         </div>
-        
+
         <!-- PROJECT HERE -->
         <!-- PROJECT HERE -->
         <div class="projectContainer">
-          
-          <img class="projectImage" src="assets/projects/TripleVGames Thumb.jpg">
+          <img class="projectImage" src="assets/projects/TripleVGames Thumb.jpg" />
           <!-- onmouseover="hover(this, 'assets/projects/Mineswoop Thumb.jpg');" 
           onmouseout="unhover(this, 'assets/projects/LLV Thumb.jpg');"> -->
 
           <h2>Game Development (Triple V Games)</h2>
           <a href="https://vonvista.github.io/Linked-List/">Visit Google Play page</a>
 
-
           <p>
-            Collection of mobile games I made independently and currently uploaded in Google Play 
-            under the alias Triple V Games. Games are made between 2016-2019, currently inactive in game 
-            development. Graphics, Music, and Code made solely by myself.
+            Collection of mobile games I made independently and currently uploaded in Google Play under the alias Triple V Games. Games are made
+            between 2016-2019, currently inactive in game development. Graphics, Music, and Code made solely by myself.
           </p>
 
           <div class="tagsContainer">
-            <p style="background-color:#8b0e0e;">Games</p>
-            <p style="background-color:#100e8b;">C#</p>
-            <p style="background-color:#278b0e;">Unity Engine</p>
+            <p style="background-color: #8b0e0e">Games</p>
+            <p style="background-color: #100e8b">C#</p>
+            <p style="background-color: #278b0e">Unity Engine</p>
           </div>
-
         </div>
-
       </div>
 
-      <br><br><br><br><br>
-
+      <br /><br /><br /><br /><br />
     </div>
-
 
     <div class="footer">
       <h3 id="text3">Contact me</h3>
-      <p style="margin: 0px;">vonatsiv1030@gmail.com</p>
+      <p style="margin: 0px">vonatsiv1030@gmail.com</p>
       <div class="footer-socials">
         <a href="https://www.linkedin.com/in/von-vista-943866141/">
-          <img src="assets/LinkedIn 1.svg">
+          <img src="assets/LinkedIn 1.svg" />
         </a>
 
         <a href="https://www.linkedin.com/in/von-vista-943866141/">
-          <img src="assets/Github 1.svg">
+          <img src="assets/Github 1.svg" />
         </a>
 
         <a href="https://www.linkedin.com/in/von-vista-943866141/">
-          <img src="assets/Twitter 1.svg">
+          <img src="assets/Twitter 1.svg" />
         </a>
       </div>
     </div>
-
   </body>
 </html>
